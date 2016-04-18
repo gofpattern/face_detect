@@ -1,0 +1,17 @@
+ant run 
+-for matching an image in 'probes' directory to images in 'gallery' folder using 16 eigenfaces
+
+ant nearmatch15
+-compares an image in 'probes' folder that is not present in 'gallery' folder using 15 eigenfaces.
+
+ant nearmatch8
+-similar to above ,but uses 8 eigenfaces
+
+ant exactmatch15
+--compares an image in 'probes' folder that is also present in 'gallery' folder using 15 eigenfaces.
+
+ant exactmatch8
+-similar to above ,but uses 8 eigenfaces
+
+-----------------------------------------
+The code uses jai for image handling,and colt package for matrix calculations.These jar files are in the lib directory.
